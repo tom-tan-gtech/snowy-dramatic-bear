@@ -1,4 +1,4 @@
 function StartButton() {
-  return <div></div>;
+  return <div className={["scoreContainerBox", "score"].join(" ")}>Start</div>;
 }
 export default StartButton;

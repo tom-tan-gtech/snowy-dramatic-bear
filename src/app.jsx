@@ -1,15 +1,16 @@
-// Import and apply CSS stylesheet
 import "./styles/app.css";
-import Header from "./Header.jsx";
-import Footer from "./Footer.jsx";
-import Food from "./Food.jsx";
 import GameArea from "./GameArea.jsx";
+import { AppContext } from "./AppContext.js";
+import { useState } from "react";
 
-// Home function that is reflected across the site
 export default function Home() {
+  const [score, setScore] = useState(0);
+
   return (
     // implementations here
     // <main role="main" className="wrapper" id="root"></main>
-    <GameArea></GameArea>
+    <AppContext.Provider value={{ score, setScore }}>
+      <GameArea></GameArea>
+    </AppContext.Provider>
   );
 }

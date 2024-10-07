@@ -1,4 +1,6 @@
 function SpeedSlider() {
-  return <div></div>;
+  return (
+    <div className={["scoreContainerBox", "speedSlider"].join(" ")}>Speed</div>
+  );
 }
 export default SpeedSlider;

@@ -7,32 +7,93 @@ body {
 .gameArea {
 	width: 400px;
 	height: 600px;
-	position: fixed;
-	top: 50%;
+    margin: 0 auto;
+	/* position: fixed; */
+	/* top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
     border: 5px solid black;
 }
 
 .controlPanel{
 	width: 400px;
 	height: 100px;
-	position: fixed;
-	top: 10%;
+        margin: 0 auto;
+        top: 0;
+         display: flex;
+         flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+	/* position: fixed;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
     border: 5px solid blue;
 }
 
-.canvasArea {
-	width: 400px;
-	height: 500px;
-	position: fixed;
+.canvasDiv {
+	width: 410px;
+	height: 550px;
+        margin: 0 auto;
+        margin-top: -50px;
+
+	/* position: fixed;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
+    border: 5px solid green;
+}
+
+.scoreContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 5px solid red;
+}
+.scoreContainerBox{
+    padding: 4px;
+    margin: 10px;
+
+}
+.score {
+	width: 100px;
+	height: 10px;
+        /* margin: 0 auto; */
+
+	/* position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
     border: 5px solid yellow;
 }
+
+.startButton {
+	width: 100px;
+	height: 10px;
+        /* margin: 0 auto; */
+
+	/* position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+    border: 5px solid yellow;
+}
+
+.speedSlider {
+	width: 100%;
+	height: 10px;
+        /* margin: 0 auto; */
+
+	/* position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+    border: 5px solid yellow;
+}
+
+
 
 .playArea {
 	border: 5px solid red;
