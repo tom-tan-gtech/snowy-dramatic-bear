@@ -2,10 +2,10 @@ import { useContext } from "react";
 import { AppContext } from "./AppContext";
 
 function Score() {
-  const data = useContext(AppContext);
+  const { score } = useContext(AppContext);
 
   return (
-    <div className={["scoreContainerBox", "score"].join(" ")}>{data.score}</div>
+    <div className={["scoreContainerBox", "score"].join(" ")}>{score}</div>
   );
 }
 export default Score;

@@ -5,8 +5,8 @@ import { useEffect, useRef, useState, useContext } from "react";
 let canvas;
 let canvasContext;
 
-const canvasWidth = 300;
-const canvasHeight = 600;
+const canvasWidth = 400;
+const canvasHeight = 500;
 
 const BLACK_COLOR = "black";
 const TOP_PANEL_HEIGHT = 100;
